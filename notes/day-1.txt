@@ -70,6 +70,28 @@ umd (universal module definition format)
 module loaders:
 requirejs
 
+packages:
+a. installed in an application
+b. installed globally in the system
+
+Tool to create angular application: 
+Angular CLI
+package name: @angular/cli
+>npm i @angular/cli -g
+global path: C:\Users\<user-name>\AppData\Roaming\npm
+
+Angular assets and decorators:
+
+1. component @Component()
+2. directive @Directive()
+3. pipe @Pipe()
+
+4. service @Injectable()
+
+5. module @NgModule()
+
+
+
 
 
 
