@@ -53,3 +53,24 @@ text-align: center
 background-color:grey
 
 
+typeScript:
+data types: number, string, boolean, object [any, partial]
+
+>npm init (npm init --yes) => will create package.json file
+>.\node_modules\.bin\tsc --init => will create configuration file for typescript transpiler configuration (tsconfig.json)
+
+module formats:
+
+import/export (ES6 module format)
+require() (common js format - default for node js applications)
+amd (asynchronous module definition format) => requirejs understands this format
+umd (universal module definition format)
+
+
+module loaders:
+requirejs
+
+
+
+
+
