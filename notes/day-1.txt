@@ -1,0 +1,15 @@
+https://github.com/joydip-git/siemens-angular-10thapril2023
+
+Angular:
+
+1. JavaScript - basic and advanced
+2. TypeScript
+3. New features in TS/JS 
+4. web app development using JS frameworks/libraries
+
+
+var x = 10
+
+
+var x:number=10
+x='joydip'
