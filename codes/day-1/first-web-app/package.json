@@ -1,0 +1,20 @@
+{
+  "name": "first-web-app",
+  "version": "1.0.0",
+  "description": "simple app",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joydip-git/siemens-angular-10thapril2023.git"
+  },
+  "author": "joydip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joydip-git/siemens-angular-10thapril2023/issues"
+  },
+  "homepage": "https://github.com/joydip-git/siemens-angular-10thapril2023#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

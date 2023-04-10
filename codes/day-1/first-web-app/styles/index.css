@@ -1,0 +1,45 @@
+/* element selector */
+/*
+        h2,
+        p {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        */
+
+/* id selector */
+/*
+#headerElement,
+#firstPara {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+#secondPara {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  margin-left: 50px;
+}
+*/
+
+.common {
+  background-color: aquamarine;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.particular {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  margin-left: 50px;
+}
+
+.btn-style {
+  height: 40px;
+  width: 80px;
+  background-color: blueviolet;
+  border-width: 1px;
+  border-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+}

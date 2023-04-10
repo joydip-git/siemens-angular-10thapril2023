@@ -13,3 +13,43 @@ var x = 10
 
 var x:number=10
 x='joydip'
+
+angular-apps
+
+HTML:
+self-closing/empty tag: which does not have any nested tag/element or text inside it.
+<tag-name /> or <tag-name>
+
+
+web servers:
+IIS (internet information services)
+Apache Tomcat
+NGINX
+VERCEL
+
+
+Development mode:
+App Development server: host one application at a time, using port number
+lite-server
+Live Server
+Webpack Development Server etc.
+
+CSS:
+Cascading Style Sheet
+
+a collection of properties and values
+
+a. inline styling
+b. outline styling
+	i.  in the same HTML file
+	ii. in separate CSS file
+
+selectors:
+a. element 
+b. id
+c. class
+
+text-align: center
+background-color:grey
+
+
