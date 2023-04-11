@@ -1,0 +1,7 @@
+<div class="md-4">
+    <label for="txtFilter">Filter By:&nbsp;</label>
+    <input type="text" id="txtFilter" [value]="filterValue" (keyup)="updateFilterValue(filterTxt.value)" #filterTxt>
+</div>
+<div>
+    {{sample}}
+</div>

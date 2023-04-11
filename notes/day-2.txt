@@ -80,6 +80,9 @@ export class NamePipe implements PipeTransform {
 
 }
 
+UI:
+{{ data | pipename:'':'':'' }}
+
 Backend applicaion:
 
 Url										Http Method	request data		response

@@ -9,4 +9,9 @@ import { Product } from "src/models/product";
 })
 export class ProductListComponent {
     productRecords: Product[] = products
+    data = 'data'
+    filterText = ''
+    updateFilterText(newText: string) {
+        this.filterText = newText
+    }
 }
