@@ -3,3 +3,42 @@
 </h2>
 <label for="txtTitle">Title</label>
 <input type="text" id="txtTitle" [style.width.px]="txtWidth" (keyup)="updateTitle(titleTxt.value)" #titleTxt>
+
+<div>
+    <span>{{person.name}}</span>
+    <br>
+    <span>{{person.salary}}</span>
+</div>
+
+<ng-template #alternate>
+    <span>No numbers in the array</span>
+</ng-template>
+<ol *ngIf="numbers.length>0;else alternate">
+    <li *ngFor="let num of numbers">
+        {{num}}
+    </li>
+</ol>
+
+<br>
+
+<ul *ngIf="people.length>0">
+    <li *ngFor="let p of people">
+        Name:&nbsp;{{p.name}}
+        <br>
+        <div>
+            Friends:
+        </div>
+        <div>
+            <ng-template #nofriends>
+                <span>No Friends</span>
+            </ng-template>
+            <div *ngIf="p.friends;else nofriends">
+                <ol *ngIf="p.friends.length>0; else nofriends">
+                    <li *ngFor="let f of p.friends">
+                        {{f}}
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </li>
+</ul>

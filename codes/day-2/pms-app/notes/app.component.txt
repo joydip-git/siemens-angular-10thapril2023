@@ -8,6 +8,23 @@ import { Component } from "@angular/core";
 export class AppComponent {
     title = "Product Management"
     txtWidth = 300
+    numbers = [1, 2, 3]
+    person = {
+        name: 'anil',
+        salary: 1000
+    }
+    people = [
+        {
+            name: 'anil',
+            salary: 1000,
+            friends: ['sunil', 'mahesh']
+        },
+        {
+            name: 'sunil',
+            salary: 2000,
+            friends: []
+        }
+    ]
 
     updateTitle(newValue: string) {
         this.title = newValue
