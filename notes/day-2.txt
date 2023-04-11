@@ -1,0 +1,26 @@
+1. Angular assets:
+	a. Component: design + code + metadata
+		component class should be decorated with @Component()
+
+	b. Directive: code + metadata
+		directive class should be decorated with @Directive()
+
+	c. Pipe: code + metadata
+		pipe class should be decorated with @Pipe()
+
+	d. Service: code + metadata
+		service class should be decorated with @Injectable()
+
+	e. Module: code + metadata
+		module class should be decorated with @NgModule()
+
+2. Features:
+	a. Data binding and event binding
+	b. MV-* pattern
+	c. code segregation
+	d. DI
+	e. forms - template driven forms and reactive forms
+	f. routing
+	g. router gurads
+
+
