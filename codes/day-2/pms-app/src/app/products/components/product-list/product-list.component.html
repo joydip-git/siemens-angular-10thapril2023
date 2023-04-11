@@ -14,8 +14,8 @@
                 <td>
                     <img [src]="p.imageUrl" alt="NA" title="{{p.productName}}" class="img-size">
                 </td>
-                <td>{{p.productName}}</td>
-                <td>{{p.price}}</td>
+                <td>{{p.productName | uppercaseconverter}}</td>
+                <td>{{p.price | currency:'INR'}}</td>
                 <td>{{p.starRating}}</td>
                 <td>
                     <button type="button" class="btn btn-danger">Delete</button>

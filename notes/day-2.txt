@@ -67,6 +67,19 @@ export class CommonModule{}
 @NgModule({ imports:[CommonModule]})
 export class BrowsernModule{} 
 
+Pipe: a place 
+
+import { Pipe, PipeTransform } from "@angular/core";
+@Pipe({
+    name: 'pipename'
+})
+export class NamePipe implements PipeTransform {
+    transform(value: any, ...args: any[]) {
+        return null;
+    }
+
+}
+
 Backend applicaion:
 
 Url										Http Method	request data		response
