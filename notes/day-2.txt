@@ -24,3 +24,26 @@
 	g. router gurads
 
 
+
+Backend applicaion:
+
+Url										Http Method	request data		response
+-----------------------------------------------------------------------------------------
+http://127.0.0.1:3003/products		GET		NA				{"message":"record found","data":[{},{}.....]}	
+
+http://127.0.0.1:3003/products/{id}	GET		id				{"message":"record found","data":{}}
+http://127.0.0.1:3003/products/{id}	GET		id				{"message":"no such record exists","data":null}	
+
+http://127.0.0.1:3003/products/{id}	DELETE	id				{"message":"record deleted","data":[{},{},..]}	
+http://127.0.0.1:3003/products/{id}	DELETE	id				{"message":"no such record exists","data":null}		
+
+http://127.0.0.1:3003/products/{id}	PUT		id, product	{"message":"record updated","data":[{},{},..]}	
+http://127.0.0.1:3003/products/{id}	PUT		id, product	{"message":"no such record exists","data":null}
+
+http://127.0.0.1:3003/products		POST		product		{"message":"record added","data":[{},{},..]}	
+http://127.0.0.1:3003/products		POST		product		{"message":"record not added","data":null}
+
+
+
+
+
