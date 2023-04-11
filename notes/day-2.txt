@@ -30,6 +30,42 @@ NgModule metadata object properties:
 4. bootstrap: array to mention which component(s) to be boottstrapped when this module is bootstrapped
 5. exports: array to mention name of components, directives, pipes, modules (registered with this module) to exported out of this module, so that other modules can import them
 
+Binding:
+a. code => view
+	Data Binding:
+	1. interpolaion => {{<prop-name>}}: converts the value to string format
+	2. property binding => <element [target-prop]="class-prop-name">: retains the originality of the property value
+
+b. view => code
+	event binding:
+	<element (event-name)="method-in-the-class(arg)">
+
+@Directive({
+	selector:'[ngFor]'
+})
+export class NgForOf{
+	method(local,array){}
+}
+
+
+Types of directives:
+1. component directive
+
+2. structural directive: 
+manipulates DOM (whether an element will be rendered or not, how many times same template should bbe rendered etc.)
+NgForOf (*ngFor="let x of <collection>"), NgIf (*ngIf=""), NgIfElse (*ngIf=";else "), NgSwitchCase (*ngSwitch)
+
+3. attribute directive: 
+It is used to extend the behavior of the element 
+ngClass, ngStyle, ngModel etc.
+
+
+
+@NgModule({ declarations:[NgForOf]})
+export class CommonModule{} 
+
+@NgModule({ imports:[CommonModule]})
+export class BrowsernModule{} 
 
 Backend applicaion:
 

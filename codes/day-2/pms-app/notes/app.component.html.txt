@@ -1,0 +1,5 @@
+<h2>
+    {{title}}
+</h2>
+<label for="txtTitle">Title</label>
+<input type="text" id="txtTitle" [style.width.px]="txtWidth" (keyup)="updateTitle(titleTxt.value)" #titleTxt>
