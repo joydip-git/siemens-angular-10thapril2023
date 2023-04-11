@@ -1,7 +1,19 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { NgModuleRef, PlatformRef } from "@angular/core";
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
+import { AppModule } from "./app/app.module";
 
-import { AppModule } from './app/app.module';
+const platformObject: PlatformRef = platformBrowserDynamic()
 
+const promiseObject: Promise<NgModuleRef<AppModule>> =
+  platformObject
+    .bootstrapModule(AppModule)
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+promiseObject
+  .then(
+    (moduleRef) => {
+      console.log(moduleRef.instance)
+    },
+    (err: Error) => {
+      console.log(err.message)
+    }
+  )

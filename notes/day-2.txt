@@ -23,6 +23,12 @@
 	f. routing
 	g. router gurads
 
+NgModule metadata object properties:
+1. declarations: array to register components, directives, pipes
+2. imports: array to register built-in modules and other feature (child) modules
+3. providers: array to register services
+4. bootstrap: array to mention which component(s) to be boottstrapped when this module is bootstrapped
+5. exports: array to mention name of components, directives, pipes, modules (registered with this module) to exported out of this module, so that other modules can import them
 
 
 Backend applicaion:
