@@ -8,12 +8,13 @@ import { ProductFilterPipe } from "./products/pipes/product-filter.pipe";
 import { FilterComponent } from './products/components/filter/filter.component';
 import { ProductService } from "./products/services/product.service";
 import { PRODUCT_SERVICE_TOKEN, SERVICE_TYPE } from "src/constants/app-constants";
+import { HttpClientModule } from "@angular/common/http";
 
 
 
 @NgModule({
     declarations: [AppComponent, ProductListComponent, UppercaseConverterPipe, ProductFilterPipe, FilterComponent],
-    imports: [BrowserModule],
+    imports: [BrowserModule, HttpClientModule],
     providers: [
         //ProductService
         {
