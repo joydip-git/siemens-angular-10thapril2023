@@ -7,13 +7,20 @@ import { UppercaseConverterPipe } from "./products/pipes/uppercase-converter.pip
 import { ProductFilterPipe } from "./products/pipes/product-filter.pipe";
 import { FilterComponent } from './products/components/filter/filter.component';
 import { ProductService } from "./products/services/product.service";
+import { PRODUCT_SERVICE_TOKEN, SERVICE_TYPE } from "src/constants/app-constants";
 
 
 
 @NgModule({
     declarations: [AppComponent, ProductListComponent, UppercaseConverterPipe, ProductFilterPipe, FilterComponent],
     imports: [BrowserModule],
-    providers: [ProductService],
+    providers: [
+        //ProductService
+        {
+            provide: PRODUCT_SERVICE_TOKEN,
+            useClass: SERVICE_TYPE
+        }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

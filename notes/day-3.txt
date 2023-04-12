@@ -1,4 +1,6 @@
-1. Component lifecycle:
+1. xJs
+2. service: create, reise DI
+3. Component lifecycle:
 	Changes  => OnChanges => ngOnChanges
 	Init		 => OnInit => ngOnInit
 	Destroy	 => OnDestroy => ngOnDestroy

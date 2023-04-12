@@ -1,8 +1,10 @@
-import { Component, OnDestroy, OnInit } from "@angular/core";
+import { Component, Inject, OnDestroy, OnInit } from "@angular/core";
 import { Product } from "src/models/product";
 import { ProductService } from "../../services/product.service";
 import { Observable, Subscription } from "rxjs";
 import { ApiResponse } from "src/models/api-response";
+import { IAppService } from "src/models/product-service-contract";
+import { PRODUCT_SERVICE_TOKEN } from "src/constants/app-constants";
 
 @Component({
     selector: 'app-product-list',
@@ -17,8 +19,13 @@ export class ProductListComponent implements OnInit, OnDestroy {
     data = 'data'
     filterText = ''
     private productSubscription?: Subscription;
-    constructor(private ps: ProductService) {
 
+    // private ps: IAppService;
+    // constructor(@Inject(PRODUCT_SERVICE_TOKEN) ps: IAppService) {
+    //     this.ps = ps
+    // }
+
+    constructor(@Inject(PRODUCT_SERVICE_TOKEN) private ps: IAppService) {
     }
 
     updateFilterText(newText: string) {
