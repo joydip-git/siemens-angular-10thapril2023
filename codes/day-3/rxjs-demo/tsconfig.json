@@ -1,0 +1,15 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "module": "CommonJS",
+    "target": "ES5",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "lib": [
+      "ES2015",
+      "DOM"
+    ]
+  }
+}
