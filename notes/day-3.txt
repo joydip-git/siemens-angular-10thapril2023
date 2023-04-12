@@ -1,0 +1,6 @@
+1. Component lifecycle:
+	Changes  => OnChanges => ngOnChanges
+	Init		 => OnInit => ngOnInit
+	Destroy	 => OnDestroy => ngOnDestroy
+
+	X => OnX => ngOnX
