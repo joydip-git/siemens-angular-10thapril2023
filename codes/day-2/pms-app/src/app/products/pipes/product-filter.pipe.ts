@@ -5,6 +5,7 @@ import { Product } from "src/models/product";
     name: 'productfilter'
 })
 export class ProductFilterPipe implements PipeTransform {
+    //... => rest operator
     transform(value: Product[], ...args: string[]): Product[] {
 
         if (value.length > 0 && args[0] !== '') {
