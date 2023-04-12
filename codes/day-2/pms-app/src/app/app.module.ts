@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './common/page-not-found/page-not-found.co
 import { RouterModule, Routes } from "@angular/router";
 import { ViewProductComponent } from './products/components/view-product/view-product.component';
 import { AddProductComponent } from './products/components/add-product/add-product.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 // const homeRoute: Route = {
 //     path: 'home',
@@ -29,8 +30,12 @@ const appRoutes: Routes = [
         component: ProductListComponent
     },
     {
-        path: 'products/:id',
+        path: 'products/view/:id',
         component: ViewProductComponent
+    },
+    {
+        path: 'products/add',
+        component: AddProductComponent
     },
     {
         path: '',
@@ -58,7 +63,9 @@ const appRoutes: Routes = [
     imports: [
         BrowserModule,
         HttpClientModule,
-        RouterModule.forRoot(appRoutes)
+        RouterModule.forRoot(appRoutes),
+        FormsModule,
+        ReactiveFormsModule
     ],
     providers: [
         //ProductService

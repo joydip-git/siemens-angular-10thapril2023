@@ -1,1 +1,45 @@
-<p>add-product works!</p>
+<div class="container">
+    <form [formGroup]="form" (submit)="submitProduct()">
+        <fieldset>
+            <legend>Add New Product Details</legend>
+            <div class="form-group">
+                <label for="txtId" class="form-label mt-2">Id:&nbsp;</label>
+                <input type="text" id="txtId" class="form-control" formControlName="productId">
+            </div>
+            <div class="form-group">
+                <label for="txtName" class="form-label mt-2">Name:&nbsp;</label>
+                <input type="text" id="txtName" class="form-control" formControlName="productName">
+            </div>
+            <div class="form-group">
+                <label for="txtCode" class="form-label mt-2">Code:&nbsp;</label>
+                <input type="text" id="txtCode" class="form-control" formControlName="productCode">
+            </div>
+            <div class="form-group">
+                <label for="txtPrice" class="form-label mt-2">Price:&nbsp;</label>
+                <input type="text" id="txtPrice" class="form-control" formControlName="price">
+            </div>
+            <div class="form-group">
+                <label for="txtDate" class="form-label mt-2">Date:&nbsp;</label>
+                <input type="text" id="txtDate" class="form-control" formControlName="releaseDate">
+            </div>
+            <div class="form-group">
+                <label for="txtRating" class="form-label mt-2">Rating:&nbsp;</label>
+                <input type="text" id="txtRating" class="form-control" formControlName="starRating">
+            </div>
+            <div class="form-group">
+                <label for="txtImage" class="form-label mt-2">Image URL:&nbsp;</label>
+                <input type="text" id="txtImage" class="form-control" formControlName="imageUrl">
+            </div>
+            <div class="form-group">
+                <label for="txtDesc" class="form-label mt-2">Description:&nbsp;</label>
+                <textarea id="txtDesc" class="form-control" formControlName="description">
+                </textarea>
+            </div>
+            <div class="form-group btn-style">
+                <button type="submit" class="btn btn-primary">
+                    Add Product
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>

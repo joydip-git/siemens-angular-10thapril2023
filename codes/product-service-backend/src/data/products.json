@@ -48,5 +48,15 @@
         "price": 67,
         "starRating": 4,
         "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+    },
+    {
+        "productId": "6",
+        "productName": "dell xps",
+        "productCode": "dell-123",
+        "description": "dell laptop",
+        "releaseDate": "4/12/2023",
+        "starRating": "4",
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png",
+        "price": "100000"
     }
 ]
