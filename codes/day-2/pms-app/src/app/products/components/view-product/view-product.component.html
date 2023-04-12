@@ -1,0 +1,19 @@
+<div class="container">
+    <ng-template #loading>
+        <span>Loading...please wait</span>
+    </ng-template>
+    <ng-template #errorInfo>
+        <span>{{errorMessage}}</span>
+    </ng-template>
+    <ng-template #norecord>
+        <span>No records</span>
+    </ng-template>
+    <div *ngIf="loadingComplete;else loading">
+        <div *ngIf="errorMessage==='';else errorInfo">
+            <span *ngIf="product">
+                Details of {{product.productName}}
+            </span>
+        </div>
+    </div>
+
+</div>

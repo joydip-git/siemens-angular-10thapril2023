@@ -6,3 +6,29 @@
 	Destroy	 => OnDestroy => ngOnDestroy
 
 	X => OnX => ngOnX
+
+
+localhost:4200/products ProductListComponent
+localhost:4200/home or localhost:4200 HomeComponent
+anything else: PageNotFoundComponent
+
+
+Routing: 
+package name: @angualr/routing
+module name: RouterModule
+
+types:
+Route (class) => path and component
+Routes: array of Route objects
+RouterState
+ActivatedRouteSnapshot
+
+Service: 
+Router (engine)
+ActivatedRoute
+
+directive:
+router-outlet
+routerLink
+
+
